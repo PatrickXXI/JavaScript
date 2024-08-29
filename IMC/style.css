@@ -1,9 +1,40 @@
-.p-custom{
-    font-size: 10px;        /* Tamanho da fonte */
-    font-family: Arial, sans-serif; /* Fonte do texto */
-    color: #be129c;         /* Cor do texto */
-    font-weight: bold;      /* Negrito */
-    text-transform: uppercase; /* Letras maiúsculas */
-    margin-bottom: 10px;    /* Espaçamento inferior */
-    display: block;         /* Faz o label ocupar toda a largura disponível */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid #444;
+}
+
+.menu-item:hover {
+    background-color: #555;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 20px;
+}
+.btn{
+    background-color: red;
 }
