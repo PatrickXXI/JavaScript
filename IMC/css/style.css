@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+.menu-container {
+    position: relative; /* Container para manter o menu e o ícone juntos */
+}
+.menu-item {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid #444;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Inicialmente escondido do lado esquerdo */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: left 0.3s;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 15px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu.show {
+    left: 0; /* Mostra o menu */
+}
+
+.menu-trigger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.imagemTop{
+    
+}
